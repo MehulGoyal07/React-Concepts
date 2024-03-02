@@ -33,5 +33,30 @@
 //     </>
 //   );
 // }
-
+/**  02 - Understanding props
+      - Suppose we are creating a card on our page, it can be resuable, 
+        so we will make a separate Card.jsx in components folder
+      - Now for ex: if we want to change some name on every card then we 
+        can use props for this
+      - The values passed are received in Card.jsx and can be used there
+      - We can pass according to our requirements
+      - The name refered must be same
+*/
+import Card from "./components/Card";
+function App() {
+  let object = {
+    username : "Mehul",
+    age: 20
+  }
+  let arr = [10,20,30,40]
+  return (
+    <>
+      <h1>Hello World</h1>
+      {/* <Card name="Sanyam" obj={object} arr={arr}/> */}
+      <Card username="Mehul" arr={arr}/>
+      {/* <Card username="Sanyam"/>
+      <Card arr={arr}/> */}
+    </>
+  );
+}
 export default App;
