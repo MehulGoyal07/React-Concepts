@@ -50,3 +50,28 @@
 - Now for ex: if we want to change some name on every card then we can use props for this
 
 ### NOTE:- Basics of React are completed above, now we will learn further concepts by creating projects
+
+### Background color changer (02bgChanger)
+
+- Simple bg color changer project in which bg color changes with button onclick
+- concept is understanding useState hook
+- also that onclick takes a function itself that's why callback function written in onclick method and then the bg color changes
+
+### Understanding useEffect, useRef, useCallback(03password-generator)
+
+- In this we will firstly use four useStates to change the length, numbers, character, password fields
+- A random password will be generated through a mechanism when the page loads
+- We will create a function which will generate passwords randomly for us, but we have to change the parameters accordingly such that on length basis, numbers, characters
+- That's why we will take help of "useCallback" hook
+- "useCallback" -> It is a ReactHook that lets us cache a function definition between re-renders
+- useCallback takes function and dependencies such that useCallback(fn, dependencies)
+- "useEffect" -> It allows to perform side effects in your components. Side effects might include fetching data, subscribing to services, updating the DOM, or any other operation that doesn't directly relate to rendering the UI.
+- useCallback used for optimization
+- useEffect used for re-rendering when something changed
+- Therefore, give dependencies with the function carefully
+- "useRef" -> The useRef hook in React is used to create a mutable reference that persists across renders and doesn't trigger a re-render when its value changes. It's often used to access DOM elements or to persist values between renders without causing re-renders.
+- Now for copying the password to the clipboard we will take help of useRef hook
+
+### Custom-Hooks(04currency-converter) 
+
+- 
