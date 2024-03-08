@@ -74,4 +74,6 @@
 
 ### Custom-Hooks(04currency-converter) 
 
-- 
+- A currency converted project, will also fetch data from api
+- Making a custom hook in hooks folder named useCurrencyInfo, it will return us the required data according to the currency selected and then we can use it further
+- Now, we will make a reusable component named InputBox.jsx in components folder
