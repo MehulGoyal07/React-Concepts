@@ -77,3 +77,19 @@
 - A currency converted project, will also fetch data from api
 - Making a custom hook in hooks folder named useCurrencyInfo, it will return us the required data according to the currency selected and then we can use it further
 - Now, we will make a reusable component named InputBox.jsx in components folder
+
+### React Router (05react-router)
+
+- This is not the functionality of core react but a third-party functionality
+- We will learn the functionality by creating simple website
+- Install the package npm i react-router-dom
+- Here <Link> tag is used instead of <a> anchor tag because using anchor tag, reloads the whole page but using link tag it just injects the functionality without complete painting of page
+- Now, we will not use <App/> to run the files, instead we will create a router in main.jsx
+- We will create a layout.jsx to make code more optimize, there we will use outlet from react-dom where we can put the content where rendering is occured i.e. keep the header and footer constant but changing the other components
+- We will take id after / and make route to capture the id and display it, making a user route
+- We can get the id in user.jsx using useParams from react-router-dom
+- Note: The spelling must match as in main.jsx
+- Will make another component github which will display the followers from github account
+- Will fetch the followers using api will use useEffect hook
+- To make it more optimize we can use loader in main.jsx file
+- will use another hook name 
