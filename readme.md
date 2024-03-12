@@ -72,7 +72,7 @@
 - "useRef" -> The useRef hook in React is used to create a mutable reference that persists across renders and doesn't trigger a re-render when its value changes. It's often used to access DOM elements or to persist values between renders without causing re-renders.
 - Now for copying the password to the clipboard we will take help of useRef hook
 
-### Custom-Hooks(04currency-converter) 
+### Custom-Hooks(04currency-converter)
 
 - A currency converted project, will also fetch data from api
 - Making a custom hook in hooks folder named useCurrencyInfo, it will return us the required data according to the currency selected and then we can use it further
@@ -83,8 +83,8 @@
 - This is not the functionality of core react but a third-party functionality
 - We will learn the functionality by creating simple website
 - Install the package npm i react-router-dom
-- Here <Link> tag is used instead of <a> anchor tag because using anchor tag, reloads the whole page but using link tag it just injects the functionality without complete painting of page
-- Now, we will not use <App/> to run the files, instead we will create a router in main.jsx
+- Here "Link" tag is used instead of anchor tag because using anchor tag, reloads the whole page but using link tag it just injects the functionality without complete painting of page
+- Now, we will not use "<App/>" to run the files, instead we will create a router in main.jsx
 - We will create a layout.jsx to make code more optimize, there we will use outlet from react-dom where we can put the content where rendering is occured i.e. keep the header and footer constant but changing the other components
 - We will take id after / and make route to capture the id and display it, making a user route
 - We can get the id in user.jsx using useParams from react-router-dom
@@ -92,4 +92,19 @@
 - Will make another component github which will display the followers from github account
 - Will fetch the followers using api will use useEffect hook
 - To make it more optimize we can use loader in main.jsx file
-- will use another hook name 
+- will use another hook named useLoader and directly get hold of the data
+
+### Context API (06mini-context)
+
+- Used for state management
+- In initial days, if we want to use the previous context of a componet inside another component where there is nesting of components, then we have to pass the props again and again to get hold of the context
+- Above phenomenon is called props drilling
+- To avoid this, the concept of context API was introduced which reduces the passing of props and handle it via seperate file
+- There are ways also to handle this such that redux, react-redux, redux-toolkit, zustand
+- useContext is a React Hook that lets you read and subscribe to context from your component.
+- We will create a new folder named context and there might be multiple contexts for different purposes
+- creating UserContext by using React.createContext() method
+- we will wrap the sections like login, card, data inside UserContext, so that we can get the access of the global context
+- also creating a jsx file which is UserContextProvider
+- Now, we can use UserContextProvider in our app.jsx file
+- Form login.jsx we will send the username and password to the global context using useContext
