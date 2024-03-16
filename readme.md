@@ -108,3 +108,12 @@
 - also creating a jsx file which is UserContextProvider
 - Now, we can use UserContextProvider in our app.jsx file
 - Form login.jsx we will send the username and password to the global context using useContext
+
+### Using Context API Concept(07theme-switcher)
+
+- We will make a dark mode and night mode switch case, as all the components will take hold of the global context as triggering the dark mode once the button is pressed, we have to pass the info to all the components that's why we will use context API 
+- Here in App.jsx we will have themeBtn and Card component
+- Creating contexts folder and inside that creating theme.js where createContext
+- We will export the context and context provider in the same file, rather than creating different files
+- Now, inside app.jsx file, we need wrap the components inside ThemeProvider to get access of the context
+- Now, we will take help of useContext hook from theme.js inside the files ThemeBtn to let them know when to render the changes
